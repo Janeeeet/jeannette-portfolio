@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Jeannette Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>JB</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="#home">Home</a></div>
+                <div class="link"><a href="#about">About</a></div>
+                <div class="link"><a href="#projects">Projects</a></div>
+                <div class="link contact-btn"><a href="#contact">Contact</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home" onclick="cancel()">Home</a>
+                <a href="#about" onclick="cancel()">About</a>
+                <a href="#projects" onclick="cancel()">Projects</a>
+                <a href="#contact" onclick="cancel()">Contact</a>
+                <i class="fa-solid fa-x cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section id="home">
+            <div class="main-container">
+                <div class="image">
+                    <img src="main3.png" alt="">
+                </div>
+                <div class="content">
+                    <h1>Hey I'm <span>Jeannette</span></h1>
+                    <div class="typewriter">I am <span></span></div>
+                    <p>Engineering student specializing in embedded and connected systems. I am interested in electronics, sensors, programming, and the design of smart connected objects that solve real-world problems.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/jaaneet_b/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Janeeeet"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jeannette-bass%C3%A8ne-0a3268360/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="btn">
+                        <a class="cv-btn" href="CV_BASSENE_Jeannette.pdf" download>Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="section about-section">
+            <h2>About Me</h2>
+            <p>
+            I am an engineering student at Supmicrotech-ENSMM, specializing in embedded and connected systems.
+            My interests include electronics, sensors, programming, signal processing, and the design of smart
+            connected objects.
+            </p>
+            <p>
+            Through my academic projects, I enjoy combining technical design, experimentation, and problem-solving
+            to create practical engineering solutions.
+            </p>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <h2>Projects</h2>
+
+            <div class="projects-container">
+
+                <details class="project-card">
+                    <summary>
+                        <h3>Connected Object Project</h3>
+                        <span class="project-tag">Embedded systems · Sensors · IoT</span>
+                    </summary>
+
+                <div class="project-details">
+                    <img src="images/connected-object.png" alt="Connected object project preview">
+
+                    <p>
+                    Design and development of a connected object involving sensors,
+                    electronics, data acquisition, and embedded systems.
+                    </p>
+
+                    <ul>
+                        <li>Sensor-based data acquisition</li>
+                        <li>Embedded system architecture</li>
+                        <li>Signal processing and interpretation</li>
+                        <li>Connected object design approach</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank">View project</a>
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                </details>
+
+                <details class="project-card">
+                    <summary>
+                        <h3>Signal Processing Project</h3>
+                        <span class="project-tag">MATLAB · Signal analysis · Visualization</span>
+                    </summary>
+
+                <div class="project-details">
+                    <img src="images/signal-processing.png" alt="Signal processing project preview">
+
+                    <p>
+                    MATLAB-based project focused on signal analysis, technical visualization,
+                    and interpretation of engineering data.
+                    </p>
+
+                    <ul>
+                        <li>Signal representation and analysis</li>
+                        <li>Data processing with MATLAB</li>
+                        <li>Graphical visualization of results</li>
+                        <li>Technical interpretation</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank">View project</a>
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                </details>
+
+                <details class="project-card">
+                    <summary>
+                        <h3>Mechanical Design Project</h3>
+                        <span class="project-tag">CAD · Simulation · ANSYS</span>
+                     </summary>
+
+                <div class="project-details">
+                    <img src="images/mechanical-design.png" alt="Mechanical design project preview">
+
+                    <p>
+                    CAD and simulation project involving mechanical design,
+                    modelling, and structural analysis using engineering tools.
+                    </p>
+
+                    <ul>
+                        <li>3D modelling with CAD tools</li>
+                        <li>Mechanical design and assembly</li>
+                        <li>Simulation and result analysis</li>
+                        <li>Technical documentation</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank">View project</a>
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                </details>
+
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <h2>Contact</h2>
+            <p>
+            Feel free to contact me for internship opportunities, engineering projects, or collaborations.
+            </p>
+
+            <a class="contact-link" href="mailto:bassenej24@gmail.com">bassenej24@gmail.com</a>
+        </section>
+
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
