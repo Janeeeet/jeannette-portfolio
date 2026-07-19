@@ -72,85 +72,173 @@
 
                 <details class="project-card">
                     <summary>
-                        <h3>Connected Object Project</h3>
-                        <span class="project-tag">Embedded systems · Sensors · IoT</span>
+                        <h3>Windchill Collaborative PLM - Pruning Shears Optimization</h3>
+                        <span class="project-tag">PLM · Windchill · CAD(Creo) · FEA/Ansys WB · Ashby material selection</span>
                     </summary>
 
                 <div class="project-details">
-                    <img src="images/connected-object.png" alt="Connected object project preview">
+                    <img src="windchill-optimization.png" alt="Windchill Collaborative PLM - Pruning Shears Optimization preview">
 
                     <p>
-                    Design and development of a connected object involving sensors,
-                    electronics, data acquisition, and embedded systems.
+                    Building on a pruning shears mechanism I designed, worked in a 
+                    collaborative team using the Windchill PLM platform to optimize 
+                    kinematic and fixed joints, refine part geometry via FEA 
+                    (Ansys Workbench), select materials using the Ashby method 
+                    and finalize part dimensioning and tolerances.
                     </p>
 
                     <ul>
-                        <li>Sensor-based data acquisition</li>
-                        <li>Embedded system architecture</li>
-                        <li>Signal processing and interpretation</li>
-                        <li>Connected object design approach</li>
+                        <li>Managed the project collaboratively via Windchill (PLM) with a shared CAD tree/structure</li>
+                        <li>Optimized kinematic joints: bearing lifetime calculations, bushing selection, eccentric/oblong slot connection</li>
+                        <li>Sized fixed joints: pin shear calculations, keyway sizing, bolted gearbox-to-frame connection</li>
+                        <li>Optimized part geometry (frame, oblong, eccentric) via Ansys stress analysis to reduce stress concentrations</li>
+                        <li>Selected materials (aluminum, steel) using the Ashby method with Granta EduPack, balancing mass and cost</li>
                     </ul>
 
                     <div class="project-links">
-                        <a href="#" target="_blank">View project</a>
-                        <a href="#" target="_blank">GitHub</a>
+                        <a href="windchill-optimization.pdf" target="_blank">Project report (French)</a>
+                </div>
+                </details>
+
+                <details class="project-card">
+                    <summary>
+                        <h3>Vibration Measurement via Homodyne Interferometry</h3>
+                        <span class="project-tag">Optics · Michelson Interferometer · Resonance Frequencies</span>
+                    </summary>
+
+                <div class="project-details">
+                    <img src="vibration-measurement.jpg" alt="Vibration Measurement via Homodyne Interferometry preview">
+
+                    <p>
+                    Designed and validated a proof-of-concept vibrometer based on a 
+                    homodyne Michelson interferometer, using fringe displacement to 
+                    detect the bending vibration modes of a cantilever beam, and 
+                    compared measured resonance frequencies to theoretical predictions.
+                    </p>
+
+                    <ul>
+                        <li>Conducted technology and literature review on laser vibrometry (homodyne, heterodyne, laser Doppler methods)</li>
+                        <li>Designed and built a Michelson interferometer setup with polarization optics (waveplates, PBS cubes) and a piezo-driven mirror</li>
+                        <li>Simulated fringe behavior in MATLAB for small vs. large vibration amplitudes relative to laser wavelength</li>
+                        <li>Compared experimental resonance frequencies to theoretical beam-bending model, discussing sources of discrepancy</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a href="vibration-measurement.pdf" target="_blank">Project report (French)</a>
                     </div>
                 </div>
                 </details>
 
                 <details class="project-card">
                     <summary>
-                        <h3>Signal Processing Project</h3>
-                        <span class="project-tag">MATLAB · Signal analysis · Visualization</span>
+                        <h3>Crowd Movement Simulation</h3>
+                        <span class="project-tag">Java · Object-Oriented Programming · UML · Algorithms · Simulation</span>
                     </summary>
 
                 <div class="project-details">
-                    <img src="images/signal-processing.png" alt="Signal processing project preview">
+                    <img src="crowd-movement.png" alt="Crowd Movement Simulation preview">
 
                     <p>
-                    MATLAB-based project focused on signal analysis, technical visualization,
-                    and interpretation of engineering data.
+                    Developed a Java application to simulate the movement of a crowd in
+                    different environments. The project models autonomous agents navigating
+                    toward an exit while handling collisions and obstacle avoidance through
+                    dedicated movement algorithms.
                     </p>
 
                     <ul>
-                        <li>Signal representation and analysis</li>
-                        <li>Data processing with MATLAB</li>
-                        <li>Graphical visualization of results</li>
-                        <li>Technical interpretation</li>
+                        <li>Designed the application using UML class diagrams</li>
+                        <li>Implemented object-oriented classes for agents, coordinates and crowd management</li>
+                        <li>Developed collision detection and avoidance algorithms</li>
+                        <li>Simulated agent behaviour with customizable speed, colour and starting positions</li>
+                        <li>Tested different evacuation scenarios and analysed algorithm behaviour</li>
                     </ul>
 
                     <div class="project-links">
-                        <a href="#" target="_blank">View project</a>
-                        <a href="#" target="_blank">GitHub</a>
+                        <a href="crowd-movement.pdf" target="_blank">Project report (French)</a>
+                        <a href="crowd-movement.zip" target="_blank">Source code (Zip)</a>
                     </div>
                 </div>
                 </details>
 
                 <details class="project-card">
                     <summary>
-                        <h3>Mechanical Design Project</h3>
-                        <span class="project-tag">CAD · Simulation · ANSYS</span>
+                        <h3>Ultrasound Simulation</h3>
+                        <span class="project-tag">MATLAB · Ultrasound Imaging · Signal Processing · Biomedical Simulation</span>
+                    </summary>
+
+                <div class="project-details">
+                    <img src="ultrasound-simulation.png" alt="Ultrasound Simulation preview">
+
+                    <p>
+                    Simulated the acoustic behavior of a breast ultrasound exam in MATLAB,
+                    modeling pulse propagation and echo reflection through layered tissue to detect
+                    a simulated lobular carcinoma in situ. Used time-of-flight estimation via
+                    cross-correlation and analyzed measurement robustness under varying noise conditions (SNR).
+                    </p>
+
+                    <ul>
+                        <li>Modeled a 4-layer breast tissue model (skin, fat, gland, muscle) with acoustic impedance and propagation velocity</li>
+                        <li>Simulated pulse emission and echo reflection with realistic time delays</li>
+                        <li>Used cross-correlation to estimate time-of-flight between emitted and reflected signals</li>
+                        <li>Analyzed measurement accuracy vs. SNR under added noise</li>
+                        <li>Extended simulation to multi-pulse echo trains</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a href="ultrasound-simulation.pdf" target="_blank">Project report (French)</a>
+                    </div>
+
+                </div>
+                </details>
+
+                <details class="project-card">
+                    <summary>
+                        <h3>Carbon Footprint Meter</h3>
+                        <span class="project-tag">Manufacturing · CAD · Assembly · Sustainability</span>
+                    </summary>
+
+                <div class="project-details">
+                    <img src="carbon-footprint.jpeg" alt="Carbon Footprint Meter preview">
+
+                    <p>
+                    Participated in the design and manufacturing of a carbometer,
+                    a device that measures the carbon footprint of various activities. The
+                    project involved collaborative work across several manufacturing processes,
+                    from CAD and machining to final assembly.
+                    </p>
+
+                    <ul>
+                        <li>Contributed to the manufacturing and assembly of the device</li>
+                        <li>Collaborated with other groups throughout the project lifecycle</li>
+                        <li>Gained hands-on experience with industrial manufacturing techniques</li>
+                    </ul>
+
+                </div>
+                </details>
+
+                <details class="project-card">
+                    <summary>
+                        <h3>Cleanroom Microfabrication</h3>
+                        <span class="project-tag">Microfabrication · Cleanroom · Photolithography</span>
                      </summary>
 
                 <div class="project-details">
-                    <img src="images/mechanical-design.png" alt="Mechanical design project preview">
+                    <img src="cleanroom.jpeg" alt="Cleanroom Microfabrication preview">
 
                     <p>
-                    CAD and simulation project involving mechanical design,
-                    modelling, and structural analysis using engineering tools.
+                    Hands-on introduction to cleanroom microfabrication processes, covering
+                    photolithography (resist coating, exposure, development), etching, lift-off and metal
+                    electrodeposition, applied to fabricating small metal parts (gears) on glass substrates.)
                     </p>
 
                     <ul>
-                        <li>3D modelling with CAD tools</li>
-                        <li>Mechanical design and assembly</li>
-                        <li>Simulation and result analysis</li>
-                        <li>Technical documentation</li>
+                        <li>Practiced spin-coating and photoresist processing (S1813, AZ nLOF 2020, SU-8) with defined spin/bake parameters</li>
+                        <li>Performed UV exposure (aligner) and resist development for pattern transfer</li>
+                        <li>Carried out wet etching of metals (Al, Cu, Cr) and resist stripping</li>
+                        <li>Applied lift-off and direct etch process flows for thin-film patterning</li>
+                        <li>Used nickel electrodeposition (sulfamate bath) to fabricate metal parts (gears)</li>
+                        <li>Validated each process step by microscope/profilometer inspection</li>
                     </ul>
-
-                    <div class="project-links">
-                        <a href="#" target="_blank">View project</a>
-                        <a href="#" target="_blank">GitHub</a>
-                    </div>
                 </div>
                 </details>
 
