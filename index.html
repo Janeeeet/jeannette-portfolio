@@ -72,6 +72,38 @@
 
                 <details class="project-card">
                     <summary>
+                        <h3>PCB Assembly of a Connected Development Board (L476RG)</h3>
+                        <span class="project-tag">SMT Assembly · Solder Paste Stencil Printing · Pick and Place · Reflow Soldering · IPC-A-610 · STM32L476</span>
+                    </summary>
+
+                <div class="project-details">
+                    <img src="obcp.HEIC" alt="PCB Assembly of a Connected Development Board (L476RG) preview">
+
+                    <p>
+                    Hands-on industrial assembly of a connected development board (hybrid clone 
+                    of the Nucleo STM32L476RG and the BLE X-Nucleo-IDB05A2), covering the full 
+                    process from solder paste deposition to final functional validation. Each 
+                    step was carried out and inspected following IPC standards, then documented 
+                    in a technical report.
+                    </p>
+
+                    <ul>
+                        <li>Deposited SAC305 lead-free solder paste through a 0.1 mm stencil and checked pad alignment and fill quality under microscope</li>
+                        <li>Placed SMD components (STM32L476RGT6, BLE module, accelerometer, diodes, LEDs, crystals) and verified polarity and pin 1 orientation</li>
+                        <li>Soldered the board in an infrared reflow oven using a controlled thermal profile (preheat, reflow peak, gradual cooling)</li>
+                        <li>Inspected joints and repaired defects (solder bridges) with desoldering braid, in line with IPC-A-610 and IPC-7711/7721</li>
+                        <li>Ran electrical tests (static resistance on the 3.3 V and 5 V rails) to detect short circuits before power-up</li>
+                        <li>Flashed the test firmware with STM32CubeProgrammer and validated LEDs, accelerometer and USB console communication</li>
+                        <li>Hand-soldered through-hole connectors, then cleaned the board (flux residue removal)</li>
+                    </ul>
+
+                    <!-- <div class="project-links">
+                        <a href="windchill-optimization.pdf" target="_blank">Project report (French)</a>
+                </div> -->
+                </details>
+
+                <details class="project-card">
+                    <summary>
                         <h3>Windchill Collaborative PLM - Pruning Shears Optimization</h3>
                         <span class="project-tag">PLM · Windchill · CAD(Creo) · FEA/Ansys WB · Ashby material selection</span>
                     </summary>
