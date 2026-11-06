@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Jeannette Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
         <div class="nav-container">
@@ -31,150 +33,171 @@
             </div>
         </div>
     </nav>
-        <section id="home">
-            <div class="main-container">
-                <div class="image">
-                    <img src="main3.png" alt="">
+    <section id="home">
+        <div class="main-container">
+            <div class="image">
+                <img src="main3.png" alt="">
+            </div>
+            <div class="content">
+                <h1>Hey I'm <span>Jeannette</span></h1>
+                <div class="typewriter">I am <span></span></div>
+                <p>Engineering student specializing in embedded and connected systems. I am interested in electronics,
+                    sensors, programming, and the design of smart connected objects that solve real-world problems.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/jaaneet_b/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Janeeeet"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jeannette-bass%C3%A8ne-0a3268360/"><i
+                            class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <div class="content">
-                    <h1>Hey I'm <span>Jeannette</span></h1>
-                    <div class="typewriter">I am <span></span></div>
-                    <p>Engineering student specializing in embedded and connected systems. I am interested in electronics, sensors, programming, and the design of smart connected objects that solve real-world problems.</p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/jaaneet_b/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://github.com/Janeeeet"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/jeannette-bass%C3%A8ne-0a3268360/"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <div class="btn">
-                        <a class="cv-btn" href="CV_BASSENE_Jeannette.pdf" download>Download CV</a>
-                    </div>
+                <div class="btn">
+                    <a class="cv-btn" href="CV_BASSENE_Jeannette.pdf" download>Download CV</a>
                 </div>
             </div>
-        </section>
-        
-        <section id="about" class="section about-section">
-            <h2>About Me</h2>
-            <p>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <h2>About Me</h2>
+        <p>
             I am an engineering student at Supmicrotech-ENSMM, specializing in embedded and connected systems.
             My interests include electronics, sensors, programming, signal processing, and the design of smart
             connected objects.
-            </p>
-            <p>
+        </p>
+        <p>
             Through my academic projects, I enjoy combining technical design, experimentation, and problem-solving
             to create practical engineering solutions.
-            </p>
-        </section>
+        </p>
+    </section>
 
-        <section id="projects" class="section projects-section">
-            <h2>Projects</h2>
+    <section id="projects" class="section projects-section">
+        <h2>Projects</h2>
 
-            <div class="projects-container">
+        <div class="projects-container">
 
-                <details class="project-card">
-                    <summary>
-                        <h3>PCB Assembly of a Connected Development Board (L476RG)</h3>
-                        <span class="project-tag">SMT Assembly · Solder Paste Stencil Printing · Pick and Place · Reflow Soldering · IPC-A-610 · STM32L476</span>
-                    </summary>
+            <details class="project-card">
+                <summary>
+                    <h3>PCB Assembly of a Connected Development Board (L476RG)</h3>
+                    <span class="project-tag">SMT Assembly · Solder Paste Stencil Printing · Pick and Place · Reflow
+                        Soldering · IPC-A-610 · STM32L476</span>
+                </summary>
 
                 <div class="project-details">
                     <img src="obcp.png" alt="PCB Assembly of a Connected Development Board (L476RG) preview">
 
                     <p>
-                    Hands-on industrial assembly of a connected development board (hybrid clone 
-                    of the Nucleo STM32L476RG and the BLE X-Nucleo-IDB05A2), covering the full 
-                    process from solder paste deposition to final functional validation. Each 
-                    step was carried out and inspected following IPC standards, then documented 
-                    in a technical report.
+                        Hands-on industrial assembly of a connected development board (hybrid clone
+                        of the Nucleo STM32L476RG and the BLE X-Nucleo-IDB05A2), covering the full
+                        process from solder paste deposition to final functional validation. Each
+                        step was carried out and inspected following IPC standards, then documented
+                        in a technical report.
                     </p>
 
                     <ul>
-                        <li>Deposited SAC305 lead-free solder paste through a 0.1 mm stencil and checked pad alignment and fill quality under microscope</li>
-                        <li>Placed SMD components (STM32L476RGT6, BLE module, accelerometer, diodes, LEDs, crystals) and verified polarity and pin 1 orientation</li>
-                        <li>Soldered the board in an infrared reflow oven using a controlled thermal profile (preheat, reflow peak, gradual cooling)</li>
-                        <li>Inspected joints and repaired defects (solder bridges) with desoldering braid, in line with IPC-A-610 and IPC-7711/7721</li>
-                        <li>Ran electrical tests (static resistance on the 3.3 V and 5 V rails) to detect short circuits before power-up</li>
-                        <li>Flashed the test firmware with STM32CubeProgrammer and validated LEDs, accelerometer and USB console communication</li>
+                        <li>Deposited SAC305 lead-free solder paste through a 0.1 mm stencil and checked pad alignment
+                            and fill quality under microscope</li>
+                        <li>Placed SMD components (STM32L476RGT6, BLE module, accelerometer, diodes, LEDs, crystals) and
+                            verified polarity and pin 1 orientation</li>
+                        <li>Soldered the board in an infrared reflow oven using a controlled thermal profile (preheat,
+                            reflow peak, gradual cooling)</li>
+                        <li>Inspected joints and repaired defects (solder bridges) with desoldering braid, in line with
+                            IPC-A-610 and IPC-7711/7721</li>
+                        <li>Ran electrical tests (static resistance on the 3.3 V and 5 V rails) to detect short circuits
+                            before power-up</li>
+                        <li>Flashed the test firmware with STM32CubeProgrammer and validated LEDs, accelerometer and USB
+                            console communication</li>
                         <li>Hand-soldered through-hole connectors, then cleaned the board (flux residue removal)</li>
                     </ul>
 
                     <!-- <div class="project-links">
                         <a href="windchill-optimization.pdf" target="_blank">Project report (French)</a>
                 </div> -->
-                </details>
+            </details>
 
-                <details class="project-card">
-                    <summary>
-                        <h3>Windchill Collaborative PLM - Pruning Shears Optimization</h3>
-                        <span class="project-tag">PLM · Windchill · CAD(Creo) · FEA/Ansys WB · Ashby material selection</span>
-                    </summary>
+            <details class="project-card">
+                <summary>
+                    <h3>Windchill Collaborative PLM - Pruning Shears Optimization</h3>
+                    <span class="project-tag">PLM · Windchill · CAD(Creo) · FEA/Ansys WB · Ashby material
+                        selection</span>
+                </summary>
 
                 <div class="project-details">
-                    <img src="windchill-optimization.png" alt="Windchill Collaborative PLM - Pruning Shears Optimization preview">
+                    <img src="windchill-optimization.png"
+                        alt="Windchill Collaborative PLM - Pruning Shears Optimization preview">
 
                     <p>
-                    Building on a pruning shears mechanism I designed, worked in a 
-                    collaborative team using the Windchill PLM platform to optimize 
-                    kinematic and fixed joints, refine part geometry via FEA 
-                    (Ansys Workbench), select materials using the Ashby method 
-                    and finalize part dimensioning and tolerances.
+                        Building on a pruning shears mechanism I designed, worked in a
+                        collaborative team using the Windchill PLM platform to optimize
+                        kinematic and fixed joints, refine part geometry via FEA
+                        (Ansys Workbench), select materials using the Ashby method
+                        and finalize part dimensioning and tolerances.
                     </p>
 
                     <ul>
-                        <li>Managed the project collaboratively via Windchill (PLM) with a shared CAD tree/structure</li>
-                        <li>Optimized kinematic joints: bearing lifetime calculations, bushing selection, eccentric/oblong slot connection</li>
-                        <li>Sized fixed joints: pin shear calculations, keyway sizing, bolted gearbox-to-frame connection</li>
-                        <li>Optimized part geometry (frame, oblong, eccentric) via Ansys stress analysis to reduce stress concentrations</li>
-                        <li>Selected materials (aluminum, steel) using the Ashby method with Granta EduPack, balancing mass and cost</li>
+                        <li>Managed the project collaboratively via Windchill (PLM) with a shared CAD tree/structure
+                        </li>
+                        <li>Optimized kinematic joints: bearing lifetime calculations, bushing selection,
+                            eccentric/oblong slot connection</li>
+                        <li>Sized fixed joints: pin shear calculations, keyway sizing, bolted gearbox-to-frame
+                            connection</li>
+                        <li>Optimized part geometry (frame, oblong, eccentric) via Ansys stress analysis to reduce
+                            stress concentrations</li>
+                        <li>Selected materials (aluminum, steel) using the Ashby method with Granta EduPack, balancing
+                            mass and cost</li>
                     </ul>
 
                     <div class="project-links">
                         <a href="windchill-optimization.pdf" target="_blank">Project report (French)</a>
-                </div>
-                </details>
+                    </div>
+            </details>
 
-                <details class="project-card">
-                    <summary>
-                        <h3>Vibration Measurement via Homodyne Interferometry</h3>
-                        <span class="project-tag">Optics · Michelson Interferometer · Resonance Frequencies</span>
-                    </summary>
+            <details class="project-card">
+                <summary>
+                    <h3>Vibration Measurement via Homodyne Interferometry</h3>
+                    <span class="project-tag">Optics · Michelson Interferometer · Resonance Frequencies</span>
+                </summary>
 
                 <div class="project-details">
-                    <img src="vibration-measurement.jpg" alt="Vibration Measurement via Homodyne Interferometry preview">
+                    <img src="vibration-measurement.jpg"
+                        alt="Vibration Measurement via Homodyne Interferometry preview">
 
                     <p>
-                    Designed and validated a proof-of-concept vibrometer based on a 
-                    homodyne Michelson interferometer, using fringe displacement to 
-                    detect the bending vibration modes of a cantilever beam, and 
-                    compared measured resonance frequencies to theoretical predictions.
+                        Designed and validated a proof-of-concept vibrometer based on a
+                        homodyne Michelson interferometer, using fringe displacement to
+                        detect the bending vibration modes of a cantilever beam, and
+                        compared measured resonance frequencies to theoretical predictions.
                     </p>
 
                     <ul>
-                        <li>Conducted technology and literature review on laser vibrometry (homodyne, heterodyne, laser Doppler methods)</li>
-                        <li>Designed and built a Michelson interferometer setup with polarization optics (waveplates, PBS cubes) and a piezo-driven mirror</li>
-                        <li>Simulated fringe behavior in MATLAB for small vs. large vibration amplitudes relative to laser wavelength</li>
-                        <li>Compared experimental resonance frequencies to theoretical beam-bending model, discussing sources of discrepancy</li>
+                        <li>Conducted technology and literature review on laser vibrometry (homodyne, heterodyne, laser
+                            Doppler methods)</li>
+                        <li>Designed and built a Michelson interferometer setup with polarization optics (waveplates,
+                            PBS cubes) and a piezo-driven mirror</li>
+                        <li>Simulated fringe behavior in MATLAB for small vs. large vibration amplitudes relative to
+                            laser wavelength</li>
+                        <li>Compared experimental resonance frequencies to theoretical beam-bending model, discussing
+                            sources of discrepancy</li>
                     </ul>
 
                     <div class="project-links">
                         <a href="vibration-measurement.pdf" target="_blank">Project report (French)</a>
                     </div>
                 </div>
-                </details>
+            </details>
 
-                <details class="project-card">
-                    <summary>
-                        <h3>Crowd Movement Simulation</h3>
-                        <span class="project-tag">Java · Object-Oriented Programming · UML · Algorithms · Simulation</span>
-                    </summary>
+            <details class="project-card">
+                <summary>
+                    <h3>Crowd Movement Simulation</h3>
+                    <span class="project-tag">Java · Object-Oriented Programming · UML · Algorithms · Simulation</span>
+                </summary>
 
                 <div class="project-details">
                     <img src="crowd-movement.png" alt="Crowd Movement Simulation preview">
 
                     <p>
-                    Developed a Java application to simulate the movement of a crowd in
-                    different environments. The project models autonomous agents navigating
-                    toward an exit while handling collisions and obstacle avoidance through
-                    dedicated movement algorithms.
+                        Developed a Java application to simulate the movement of a crowd in
+                        different environments. The project models autonomous agents navigating
+                        toward an exit while handling collisions and obstacle avoidance through
+                        dedicated movement algorithms.
                     </p>
 
                     <ul>
@@ -190,26 +213,28 @@
                         <a href="crowd-movement.zip" target="_blank">Source code (Zip)</a>
                     </div>
                 </div>
-                </details>
+            </details>
 
-                <details class="project-card">
-                    <summary>
-                        <h3>Ultrasound Simulation</h3>
-                        <span class="project-tag">MATLAB · Ultrasound Imaging · Signal Processing · Biomedical Simulation</span>
-                    </summary>
+            <details class="project-card">
+                <summary>
+                    <h3>Ultrasound Simulation</h3>
+                    <span class="project-tag">MATLAB · Ultrasound Imaging · Signal Processing · Biomedical
+                        Simulation</span>
+                </summary>
 
                 <div class="project-details">
                     <img src="ultrasound-simulation.png" alt="Ultrasound Simulation preview">
 
                     <p>
-                    Simulated the acoustic behavior of a breast ultrasound exam in MATLAB,
-                    modeling pulse propagation and echo reflection through layered tissue to detect
-                    a simulated lobular carcinoma in situ. Used time-of-flight estimation via
-                    cross-correlation and analyzed measurement robustness under varying noise conditions (SNR).
+                        Simulated the acoustic behavior of a breast ultrasound exam in MATLAB,
+                        modeling pulse propagation and echo reflection through layered tissue to detect
+                        a simulated lobular carcinoma in situ. Used time-of-flight estimation via
+                        cross-correlation and analyzed measurement robustness under varying noise conditions (SNR).
                     </p>
 
                     <ul>
-                        <li>Modeled a 4-layer breast tissue model (skin, fat, gland, muscle) with acoustic impedance and propagation velocity</li>
+                        <li>Modeled a 4-layer breast tissue model (skin, fat, gland, muscle) with acoustic impedance and
+                            propagation velocity</li>
                         <li>Simulated pulse emission and echo reflection with realistic time delays</li>
                         <li>Used cross-correlation to estimate time-of-flight between emitted and reflected signals</li>
                         <li>Analyzed measurement accuracy vs. SNR under added noise</li>
@@ -221,22 +246,22 @@
                     </div>
 
                 </div>
-                </details>
+            </details>
 
-                <details class="project-card">
-                    <summary>
-                        <h3>Carbon Footprint Meter</h3>
-                        <span class="project-tag">Manufacturing · CAD · Assembly · Sustainability</span>
-                    </summary>
+            <details class="project-card">
+                <summary>
+                    <h3>Carbon Footprint Meter</h3>
+                    <span class="project-tag">Manufacturing · CAD · Assembly · Sustainability</span>
+                </summary>
 
                 <div class="project-details">
                     <img src="carbon-footprint.jpeg" alt="Carbon Footprint Meter preview">
 
                     <p>
-                    Participated in the design and manufacturing of a carbometer,
-                    a device that measures the carbon footprint of various activities. The
-                    project involved collaborative work across several manufacturing processes,
-                    from CAD and machining to final assembly.
+                        Participated in the design and manufacturing of a carbometer,
+                        a device that measures the carbon footprint of various activities. The
+                        project involved collaborative work across several manufacturing processes,
+                        from CAD and machining to final assembly.
                     </p>
 
                     <ul>
@@ -246,25 +271,26 @@
                     </ul>
 
                 </div>
-                </details>
+            </details>
 
-                <details class="project-card">
-                    <summary>
-                        <h3>Cleanroom Microfabrication</h3>
-                        <span class="project-tag">Microfabrication · Cleanroom · Photolithography</span>
-                     </summary>
+            <details class="project-card">
+                <summary>
+                    <h3>Cleanroom Microfabrication</h3>
+                    <span class="project-tag">Microfabrication · Cleanroom · Photolithography</span>
+                </summary>
 
                 <div class="project-details">
                     <img src="cleanroom.jpeg" alt="Cleanroom Microfabrication preview">
 
                     <p>
-                    Hands-on introduction to cleanroom microfabrication processes, covering
-                    photolithography (resist coating, exposure, development), etching, lift-off and metal
-                    electrodeposition, applied to fabricating small metal parts (gears) on glass substrates.)
+                        Hands-on introduction to cleanroom microfabrication processes, covering
+                        photolithography (resist coating, exposure, development), etching, lift-off and metal
+                        electrodeposition, applied to fabricating small metal parts (gears) on glass substrates.)
                     </p>
 
                     <ul>
-                        <li>Practiced spin-coating and photoresist processing (S1813, AZ nLOF 2020, SU-8) with defined spin/bake parameters</li>
+                        <li>Practiced spin-coating and photoresist processing (S1813, AZ nLOF 2020, SU-8) with defined
+                            spin/bake parameters</li>
                         <li>Performed UV exposure (aligner) and resist development for pattern transfer</li>
                         <li>Carried out wet etching of metals (Al, Cu, Cr) and resist stripping</li>
                         <li>Applied lift-off and direct etch process flows for thin-film patterning</li>
@@ -272,29 +298,30 @@
                         <li>Validated each process step by microscope/profilometer inspection</li>
                     </ul>
                 </div>
-                </details>
+            </details>
 
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="section contact-section">
-            <h2>Contact</h2>
-            <p>
+    <section id="contact" class="section contact-section">
+        <h2>Contact</h2>
+        <p>
             Feel free to contact me for internship opportunities, engineering projects, or collaborations.
-            </p>
+        </p>
 
-            <a class="contact-link" href="mailto:bassenej24@gmail.com">bassenej24@gmail.com</a>
-        </section>
+        <a class="contact-link" href="mailto:bassenej24@gmail.com">bassenej24@gmail.com</a>
+    </section>
 
-        <script>
-            function hamburg(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(0px)"
-            }
-            function cancel(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(-500px)"
-            }
-        </script>
+    <script>
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel() {
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
 </body>
+
 </html>
